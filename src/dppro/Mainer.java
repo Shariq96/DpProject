@@ -20,10 +20,15 @@ public class Mainer {
        Scanner inp = new Scanner(System.in);
 CentralHub stock = new CentralHub();
 stock.showMenu();
-       
+       String order;    
 while(true)
 {
-String order = inp.next();
+    if (inp.hasNextLine()) {
+         order = inp.nextLine(); 
+    }
+    else 
+        order = "6";
+  
 stock.orderPlace(order);
     if (stock.flag == false) {
         

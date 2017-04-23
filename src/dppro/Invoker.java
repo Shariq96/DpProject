@@ -14,7 +14,7 @@ import java.util.List;
  * @author Sam
  */
 public class Invoker {
-    ArrayList<Order> q = new ArrayList<Order>();
+    //ArrayList<Order> q = new ArrayList<Order>();
     private List <Item> iitem = new ArrayList<Item>();
     public void addItem(Item _item)
     {
@@ -22,18 +22,20 @@ public class Invoker {
     }
     
    
+    public  ArrayList<IFood> food ;
     public Invoker() {
+        food = new ArrayList<>();
     }
     
-    void placeOrder(Order order) {
-        if (q.size()>0) {
+    void placeOrder(IFood order) {
+        
+        if (food.size()>0) {
             
-        q.add(q.size() - 1, order); 
+        food.add(food.size() - 1, order); 
         }
         else{
-        q.add(0, order); 
+        food.add(0, order); 
         }
-        Order r= q.remove(0);
-        order.execute();
+//        order.execute();
     }    
 }
