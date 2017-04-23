@@ -42,7 +42,7 @@ public class CentralHub {
         
     }
     Deal d;
-    public void Dealer() {
+    public void dealer() {
         System.out.println("-------Your Deal-------");
         for(Item i:Deals){
                 System.out.println("take = "+i.name());

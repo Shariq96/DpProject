@@ -16,6 +16,6 @@ class Deal implements Order {
     }
     @Override
     public void execute() {
-      stock.Dealer();
+      stock.dealer();
     }
 }
