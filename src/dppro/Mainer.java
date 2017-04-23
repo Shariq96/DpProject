@@ -23,7 +23,7 @@ stock.showMenu();
        
 while(true)
 {
-String order = inp.nextLine();
+String order = inp.next();
 stock.orderPlace(order);
     if (stock.flag == false) {
         

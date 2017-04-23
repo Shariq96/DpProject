@@ -52,7 +52,7 @@ public class CentralHub {
     public void invoke(Item fun)
     {
         System.out.println("Enter Quantity");
-          int  quantity = Integer.parseInt(inp.nextLine());
+          int  quantity = inp.nextInt();
               Item  b=fun;
             paisa = b.price()*quantity;
             Items _item = (Items)ObjectFactory.getObject(new Items<>(b,b.name()),b.name());
